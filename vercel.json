@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/ban.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/freeFire&ban",
+      "dest": "api/ban.py"
+    },
+    {
+      "src": "/api/ban",
+      "dest": "api/ban.py"
+    }
+  ]
+}
